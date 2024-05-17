@@ -40,12 +40,12 @@ const PUT = (StudentId, text, gender, setStudent, setText, setGender, setIsUpdat
 };
 
 // Function to DELETE a ToDo item
-const DELETE = (_id, setToDo) => {
+const DELETE = (_id, setStudent) => {
   axios
     .post(`${baseUrl}/delete`, { _id })
     .then(({ data }) => {
       console.log(data);
-      GET(setToDo);
+      GET(setStudent);
     })
     .catch((err) => console.log(err));
 };
