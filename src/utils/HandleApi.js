@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseUrl = "http://localhost:5000";
+const baseUrl = "https://backendstudentlist.onrender.com";
 
 // Function to GET all ToDo items
 const GET = (setStudent) => {
